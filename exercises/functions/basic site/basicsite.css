@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*.backgroundimage {
+     background-image: url('https://www.pets4homes.co.uk/images/articles/2533/large/chow-chow-hereditary-health-and-genetic-diversity-54be9a5a98044.jpg');
+}*/
+
+
+
+header {
+    background-color: #90BCB4;
+    height: 100px;
+    width: 100%;
+    padding: 25px 30px;
+    font-family: 'Barrio', cursive;
+}
+
+nav {
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    font-size: 1.2em;
+}
+
+#logo {
+    float: left;
+    font-size: 2.7em;
+    letter-spacing: 1.7px;
+}
+    
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding: 25px;
+}
+
+nav li a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+
+.main-content {
+    float: right;
+    display: inline-block;
+    width: 65%;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+aside {
+    display: inline-block;
+    float: left;
+    width: 30%;
+}
+
+img {
+    width: 400px;
+    padding: 25px;
+    border: solid 2px;
+    background-color: black;
+    
+}
+
+footer {
+    float: right;
+    bottom: 0;
+    right: 0;
+    font-family: 'Barrio', cursive;
+    height: 50px;
+}
+
+footer li {
+    display: inline;
+    list-style: none;
+    padding: 20px 10px;
+    margin-right: 50px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}

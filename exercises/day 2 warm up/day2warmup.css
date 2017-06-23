@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin: 30px;
+}
+
+.title {
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    vertical-align: top;
+    padding: 100px 0px;
+    
+}
+
+.headerBlockColor {
+    background-color: lightgrey
+}
+
+.displayInlineBlock p {
+    display: inline-block;
+    width: 350px; 
+    padding: 15px;
+    text-align: justify;
+    vertical-align: top;
+        
+}
+
+img {
+    width: 500px;
+    height: auto;
+    display: inline;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1, h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A shopping cart function</title>
+    </head>
+    
+    <body>
+        <p>To coupon or not to coupon....</p>
+        
+        <p>Does Susan use coupons:</p>
+            <form name="form">
+                <input type="radio" name="coupon" value="true" id="checkboxYes"/> yes <br>
+                <input type="radio" name="coupon" value="true" id="checkboxNo" /> no <br>
+            </form>
+            <button onclick="check()">submit</button>
+            
+        <p>What to do?</p>
+        <p id="insertText"></p>
+        
+        <p>What is in <span id="customerName"></span>'s cart?</p>
+        <p id="insertObjectFunction"></p>
+        
+        <script src="grocery_cart.js"></script>
+    </body>
+</html>

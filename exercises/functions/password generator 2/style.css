@@ -1,0 +1,32 @@
+body {
+    font-family: 'Love Ya Like A Sister', cursive;
+    text-align: center;
+}
+
+.center {
+    width: 320px;
+    margin: auto;
+    text-align: left;
+}
+#input {
+    width: 200px;
+    display: inline-block;
+    margin: 15px 15px;
+    font-size: 16px;
+}
+
+#output {
+    width: 200px;
+    margin: 0 15px;;
+    
+    font-style: italic;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+}
+
+p {
+    letter-spacing: 2px;
+}

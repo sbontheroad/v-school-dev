@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: deepskyblue;
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.backgroundimg {
+    width: auto;
+    height: 80vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("pokemon-picture.png");
+}
+
+.transparency {
+    background-color: rgba(255,255,255, 0.7);
+    width: 60%;
+    height: 84vh;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.content {
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+li {
+    display: inline-block;
+    width: 80px;
+    list-style: none;
+}
+
+#pokiname {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+

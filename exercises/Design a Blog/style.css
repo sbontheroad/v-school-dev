@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #Fff;
+
+}
+
+header {
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    height: 220px;
+    width: 100%;
+    background-color: #FFE4A6;
+    background-image: url(https://previews.123rf.com/images/halfpoint/halfpoint1510/halfpoint151000504/46417570-Young-hipster-friends-on-road-trip-on-a-summers-day-Stock-Photo.jpg); opacity: 0.6;filter: alpha(opacity=(60));
+    background-size: cover;
+    background-position: center;
+    font-family: 'Bubbler One', sans-serif;
+}
+
+.main {
+    max-width: 900px;
+    min-width: 600px;
+    text-align: justify;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 90px;
+    padding-left: 50px;
+    z-index: 1;
+}
+
+nav {
+    position: fixed;
+    top: 155px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 50px;
+}
+nav ul li {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bolder;
+    padding-right: 30px;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+
+
+.blogPost {
+    padding-bottom: 30px;
+    
+}

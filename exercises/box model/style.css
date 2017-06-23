@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+.content {
+    margin: 100px;
+    min-width: 600px;
+}
+.box {
+    height: 100px;
+    padding: 10px;
+    border: 11.5px solid #D50000;
+    margin: 25px;
+    display: inline-block;
+}
+
+.pinkBox {
+    height: 130px;
+    width: 100%;
+    background-color: #F5C6D6;
+    display: inline-block;
+    border-bottom: solid 10px #fff;
+}
+
+.fuschiaBox {
+    height: 130px;
+    width: 25%;
+    background-color: #EE2E84;
+    display: inline-block;
+    border-bottom: solid 10px #fff
+}
+
+.fuschiaBoxInner {
+    height: 130px;
+    width: 25%;
+    background-color: #EE2E84;
+    display: inline-block;
+    border-bottom: solid 10px #fff;
+    border-left: solid 10px #fff;
+}
+
+.fuschiaBoxRight {
+    height: 130px;
+    width: 25%;
+    background-color: #EE2E84;
+    display: inline-block;
+    border-bottom: solid 10px #fff;
+    border-left: solid 10px #fff;
+}
+
+.blueBoxLeft {
+    height: 130px;
+    width: 50%;
+    background-color: #85CFD8;
+    display: inline-block;
+    border-bottom: solid 10px #fff;
+    border-right: solid 5px #fff;
+}
+
+.blueBoxRight {
+    height: 130px;
+    width: 50%;
+    background-color: #85CFD8;
+    display: inline-block;
+    border-bottom: solid 10px #fff;
+    border-left: solid 5px #fff;
+}
+
+.greenBox {
+    height: 130px;
+    width: 75%;
+    background-color: #8DC63F;
+    display: inline-block;
+    border-right: solid 10px #fff;
+}
+
+.orangeBox {
+    height: 130px;
+    width: 25%;
+    background-color: #E76E34;
+    display: inline-block;
+}
+

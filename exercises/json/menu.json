@@ -1,0 +1,40 @@
+
+{
+    "breakfastSweets": [
+        {
+            "name": "mochi",
+            "readyMade": true,
+            "ing": ["rice wrapper", "bean paste", "powdered sugar"]
+        },
+        {
+            "name": "cookies",
+            "readyMade": true,
+            "ing": ["cherries", "nuts"]
+        }
+    ],
+    "lunchSweets": [
+        {
+        "name": "fruit salad",
+        "readyMade": true,
+        "ing": ["strawberries", "mango", "peach"]
+        },
+        {
+            "name": "chocolate",
+            "readyMade": true,
+            "ing": ["cocoa beans", "sugar"]
+        }
+    ],
+    "dinnerSweets": [
+        {
+            "name": "icecream sandwich",
+            "readyMade": false,
+            "ing": ["icecream", "cookie"]
+        },
+        {
+            
+        "name": "mint icecream",
+            "readyMade": false,
+            "ing": ["icecream", "fresh mint"]
+        }
+    ]
+}

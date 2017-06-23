@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 700px;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-size: 110%;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+h1, h2 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+img {
+    float: left;
+    padding: 20px;
+}
+
+p {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+

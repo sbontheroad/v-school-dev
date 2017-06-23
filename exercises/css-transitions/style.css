@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    transition: background-color 4s ease;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  margin: auto;
+  margin-top: 150px;
+  transition: border-radius 2s ease-in-out, margin-top 3s linear;
+}
+
+.inner-box {
+    color: red;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.box-radius {
+  border-radius: 30%;
+}
+
+.box-trans {
+    margin-top: 250px;
+}
+
+
+
+
+
+.bg {
+    background-color: green;
+}

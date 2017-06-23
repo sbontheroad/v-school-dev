@@ -1,0 +1,23 @@
+.timer {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: green;
+    color: yellow;
+}
+
+#cd {
+    padding-top: 45%;
+    text-align: center;
+}
+
+#clock {
+    width: 100%;
+}
+#meow {
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}

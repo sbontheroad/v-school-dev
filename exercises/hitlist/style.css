@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSExMVFRUXFxgYFxUXFRcXGBcXFxcYFxcXFxcYHSggGBolHRcXITEiJSkrLi4uGh8zODMtNygtLisBCgoKDQ0NDg0NDi0ZFRkrKy0tNy0rKysrLS0rKzctKy0rKys3KystNy0tNysrKysrKysrKysrKysrKysrKysrK//AABEIAJcBTQMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAABAAIH/8QAJhABAQEAAQMCBwEBAQAAAAAAAAERAhIh8EFhMVFxgZHB0bHhof/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6x1DqODFDvnZdSCC+y6hdNgK1aZxCg2rTyi4gpVqxZACpqgHQcWgBCQWCqqRA4likBDTOJ6QHV/o6jgwDOS6vZX1Figa6me56UFL7K09I+ygt8/StPKKApVViyAIZVYoCVOK0APsTIgEOo3kopDR3W+wCtQcuSl9QNFn9DWgsMZtpkoKAq0FiFAHpOA7fiAnFQ6JyBYcUqn6AZPP9OfQfMgLPXsqelWoBLqV5eyhkGLupy9gFajN5HfUDRgnzaqCLO0yVRQYYrQWKigDOJ6RrXeAzh4ijqAxfNX2UANaJBQK5VadBmRG2+ef+riAvJQ1qAMFWGwEzY1iv1ASKqnAFErUiwBqPwOoM2mU6yoVolXYDAlAUNEgoGC0ynQZinxVpgM9Xs1E0AwLDYCxlrF7aAkVVNgCja1IpKCxT6BSgkLq2gmrBKtBKfRRrUApPZFRk7RKrQavJnqEQNWq8hiBTl5h6hgkA1KVUFDg39KcgM4q8VotBoSBceQLFRdNtBKrVaCU+h4rQBxYaDOnqEqtBq8mZyEQNWi8liBTl5hl+owYB1arFAWpKIJadEvnn+qGjVZ7r7gqYqO3uCKANRlSqX1AWn0WqgFq0WTz5A1D1M2LPcD1LqZnE3jQa6xvqzZWvUFatWeef4oC1aPPP6ZQVi1ap7oJSiz3Kip1CYBBFA34ITkt7efgGbfdrlV+UAxb53Uo5T5A1qnL2B1A0eefMsyKLqWpSAaJTh6UFolVitUB7DDn1BnlFjeCgNxdS46sBWxadXnwgK8hVYbAC/KyrAJ0fBagrT1ew1SgbQhJFF1eyixcYBEpkORAWrUqoO3nn/h7LFgM2KT0bwcvP4AtXV5+1N+H6WArVp1efAB1GC8WsQFVxYJPPmorFpvEWdwXGldKoFnT9xYg3tZUF1Q6NR9gGmUeefw0F1e6otANcqNVpQGnfPYfhRQ2+rOnjCA6jB0tYgAcUUFi09Ik7gZfP0dGKgRqv1FiDVtClAHRpg+KilOggpfcsHfNBarap5/TgMz6+eehsIoJdhZUBlNHEzQX5GFW0F0rCNBTilUCw0WqQByg6TqwBh7nBJQClagBkmRWgpRTIsBcfPP2GrRYCq7ef4LKvPggYakoqsS2gulZ5pEoKcUvygOCq1YAqkOizzuB7oejSA7juVcUFo4ymGIDie67BQzksWRArPcSa1BagumHBYrVDYsZi+wNAd1AatOs6gKl+LOQ8eIK6Lpuq0F5/wAUoaqAoymq1QcqJKYewDjOypAHV0+dliBchJ82oLUFOMMgVoHEzF5/0DV56/oWHz4qJJINdPnszYkoMGeupIKGhKGLqSQNpiSitiSBWfwJILPRRJRdPqcSQZxRJQ2rjEgSxJBrprN4hKK/gWeqQGDf6kBPUEgdPFJRKfFIAkkFYYko/9k=);
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #202020;
+    color: #871D18;
+    font-size: 20px;
+}
+
+#headerImg {
+    height: 80px;
+    padding-right: 40px;
+}
+
+.hit-box {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.row-custom {
+    margin-top: 45px;
+}
+
+.col-md-4 {
+    margin-bottom: 25px;
+}

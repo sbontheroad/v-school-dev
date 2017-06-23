@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+.content {
+    margin: 200px;
+}
+
+.eye1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.eye2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.topRect {
+    height: 100px;
+    width: 200px;
+    background-color: orange;
+}
+
+.bottomRect {
+    height: 100px;
+    width: 200px;
+    background-color: orange
+}
+
+.halfCircle {
+    height: 100px;
+    width: 200px;
+    background-color: red;
+}

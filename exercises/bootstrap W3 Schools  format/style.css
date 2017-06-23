@@ -1,0 +1,12 @@
+nav ul li {
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    color: white;
+}
+
+nav {
+    background-color: darkgrey;
+    height: 7vh;
+}
