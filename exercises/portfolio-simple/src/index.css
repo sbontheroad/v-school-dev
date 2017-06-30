@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: transparent;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar-nav li {
+    text-align: right !important;
+    background-color: transparent !important;
+    border: transparent !important;
+  }
+}
