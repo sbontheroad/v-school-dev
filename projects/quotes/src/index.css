@@ -64,9 +64,19 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .site-circle {
     height: 40vmin;
     width: 40vmin;
+  }
+}
+
+@media (width: 1024px) {
+  .site-circle {
+    height: 22vmin;
+    width: 22vmin;
+  }
+  h3 {
+    font-size: 1.5em;
   }
 }
