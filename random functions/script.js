@@ -1,20 +1,29 @@
+// WARMUP:
+// Given a positive integer, write a function that returns how many unique factors it has. Return `prime` if it only has 2.
+// for example:  `getFactors(10)` will return `4` because the factors of 10 are 1,2,5, and 10.
+// another example: `getFactors(7)` will return `prime` because 7 is a prime number. YOU WILL NEED TO MAKE A UNIT TEST
+// test for prime-ness as well as the correct number of factors.
+
+
+
+
 // Return true if the given string contains between 1 and 3 'e' chars.
-let ePresent = (str) => {
-  let count = 0;
-  for(let x = 0; x < str.length; x++) {
-    if(str[x] === "e") {
-      count++;
-    }
-  }
-  if(count >= 1 && count <= 3) {
-    console.log(true);
-  } else {
-
-  console.log(false);
-  }
-};
-
-ePresent("fasdeeeef");
+// let ePresent = (str) => {
+//   let count = 0;
+//   for(let x = 0; x < str.length; x++) {
+//     if(str[x] === "e") {
+//       count++;
+//     }
+//   }
+//   if(count >= 1 && count <= 3) {
+//     console.log(true);
+//   } else {
+//
+//   console.log(false);
+//   }
+// };
+//
+// ePresent("fasdeeeef");
 
 
 //

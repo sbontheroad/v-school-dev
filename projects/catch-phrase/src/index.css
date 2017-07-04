@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #262626;
+  font-family: 'Bellefair', serif;
+}
+
+.container-custom {
+  padding: 0 20px;
+}
+
+.site-circle {
+  margin: 40px auto 0 auto;
+  height: 25vmin;
+  width: 25vmin;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid orange;
+}
+
+h1, h3 {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  letter-spacing: .05em;
+  font-size: 3.5em;
+}
+
+h3 {
+  letter-spacing: .2em;
+  font-size: 1.7em;
+}
+
+.navbar-custom {
+  background-color: #1c1c1c;
+  border-radius: 0;
+  font-size: 1.3em !important;
+  padding: 6px 0;
+}
+
+.brand {
+  font-size: 1.4em !important;
+  letter-spacing: .05em;
+  color: orange !important;
+}
+
+.navLinks a {
+  color: white !important;
+  padding-left: 30px !important;
+}
+
+@media (max-width: 1095px) {
+  h3 {
+    letter-spacing: .2em;
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-circle {
+    height: 40vmin;
+    width: 40vmin;
+  }
+}

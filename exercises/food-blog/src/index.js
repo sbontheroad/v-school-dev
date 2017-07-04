@@ -54,8 +54,7 @@ class App extends React.Component {
     ];
     return (
       <div>
-        <NavbarBlog
-           brand="Food Blog" links={myLinks}/>
+        <NavbarBlog brand="Food Blog" links={myLinks}/>
         <ArticleList articles={myArticles} />
         <Footer/>
       </div>
