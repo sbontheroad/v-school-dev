@@ -1,0 +1,29 @@
+.container-custom {
+  text-align: center;
+  font-family: Verdana;
+}
+
+h1 {
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+
+ul {
+  text-align: left;
+  font-size: 1.4em;
+}
+
+.button {
+  margin-left: 5px;
+  background-color: hotpink;
+}
+
+input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+.inputData {
+  margin-left: 80px;
+}
