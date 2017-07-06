@@ -11,7 +11,7 @@ class FormContainer extends React.Component {
       nameValue: ""
     }
     autoBind(this);
-  
+  }
   input(event) {
     this.setState({
       ...this.state,
