@@ -37,7 +37,6 @@ class FormContainer extends React.Component {
     return (
       <div>
           <Form handleRemove={this.remove} nameValue={this.state.nameValue}  handleInput={this.input} handleClick={this.click} onbrand="Atom Sucks Balls" names={this.state.names}/>
-
       </div>
     )
   }

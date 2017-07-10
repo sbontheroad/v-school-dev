@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*background-color: #252525;*/
+  /*pink font color #F6506F*/
+  background-color: #181717;
+}
+
+.header {
+  height: 33vmin;
+  width: 100%;
+  color: #EAF1ED;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  padding-top: 9vmin;
+  border-bottom: .9em solid #60B6B9;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.2em;
+}
+
+.input {
+  border-radius: 5%;
+  height: 35px;
+  width: 330px;
+  margin-top: 20px;
+  font-size: 1.4em;
+  text-align: center;
+  color: #252525;
+}
+
+.todoList {
+  color: #EAF1ED;
+  font-size: 1.5em;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.todoList li {
+  padding-top: 15px
+}
