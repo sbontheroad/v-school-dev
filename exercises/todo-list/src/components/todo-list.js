@@ -7,7 +7,7 @@ class TodoList extends React.Component {
   genTodoItems() {
     //return array of to do items
     return this.props.items.map((item, index) => {
-      return (<TodoItem onClick={() => {this.props.handleRemove(this.props.index)}} index={index} text={item} key={item + index} />);
+      return (<TodoItem handleSave={this.props.handleSave} handleUpdate={this.props.handleUpdate} nameValue={item.inputValue} index={index} text={item.name} key={item.name + index} handleRemove={this.props.handleRemove} />);
     })
   }
   render() {

@@ -9,27 +9,72 @@ class TodoContainer extends React.Component {
   constructor() {
     super();
     this.state = {
-      items: ["do a function", "learn linux"],
+      items: [
+        {
+          name: "do a function",
+          value: ""
+        },
+        {
+          name: "learn linux",
+          value: ""
+        }
+      ],
       inputValue: ""
     }
     autoBind(this);
   }
   click() {
-
+    this.setState({
+      ...this.state,
+      items: [
+        ...this.state.items,
+        {
+          name: this.state.inputValue,
+          inputValue: ""
+        }
+      ],
+      inputValue: ""
+    });
   }
   keyPress(event) {
     if(event.key === "Enter") {
       this.setState({
         ...this.state,
-        items: [...this.state.items, this.state.inputValue],
+        items: [...this.state.items, {name: this.state.inputValue, inputValue: ""}],
         inputValue: ""
       });
+      event.target.value = ""
     }
   }
   updateValue(event) {
     this.setState ({
       ...this.state,
       inputValue: event.target.value
+    });
+  }
+  updateItemValue(index, event) {
+    let items = [...this.state.items];
+    items[index].inputValue = event.target.value;
+    this.setState({
+      ...this.state,
+      items: items
+    });
+  }
+  save(index) {
+    let items = [...this.state.items];
+    items[index].name = items[index].inputValue;
+    items[index].inputValue = "";
+    this.setState({
+      ...this.state,
+      items: items
+    });
+  }
+  updateNameOfItem(index, event) {
+    let items = [...this.state.items];
+    items[index].inputValue = event.target.value;
+    this.setState({
+      ...this.state,
+      items: items
     });
   }
   remove(index) {
@@ -44,7 +89,7 @@ class TodoContainer extends React.Component {
     return (
       <div>
         <Header keyPress={this.keyPress} value={this.state.inputValue} change={(event) => {this.updateValue(event)}}/>
-        <TodoList handleRemove={this.remove} items={this.state.items}/>
+        <TodoList handleSave={this.save} handleUpdate={this.updateItemValue} handleRemove={this.remove} items={this.state.items}/>
       </div>
     )
   }
