@@ -3,13 +3,13 @@ import ReactDOM from "react-dom";
 
 //import components
 import "./css/index.css";
-
+import BadgeContainer from "./containers/badge-container.js";
 
 class App extends React.Component {
   render() {
-    return(
+    return (
       <div>
-        test
+        <BadgeContainer />
       </div>
     )
   }
