@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.header-custom {
+  background-color: #588896 !important;
+  color: white !important;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+
+.formInput {
+  width: 100%;
+  padding: 5px;
+}
+
+.formText {
+}
+
+.meme {
+  height: 55vh;
+  width: 100%;
+  border: 2px solid #cfcfcf;
+}
+
+.memeImage {
+  /*background-image: url("https://cfp.openwest.org/uploads/Jacob.Evans5949a98c9e20e.jpg");*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55vh;
+  width: 100%;
+}
+
+.meme-text {
+  margin: auto;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 2.2em;
+}
+
+.meme-text-top {
+  padding-top: 25px;
+}
+
+.meme-text-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 55px;
+}
+
+.button-custom {
+  background-color: #588896 !important;
+  color: white !important;
+  text-shadow: 1px 1px 1px black;
+  margin-top: 25px;
+  width: 100%;
+  font-size: 1.2em !important;
+  letter-spacing: 1.2px !important;
+}
+
+.relative {
+  min-height: 100%;
+  margin-bottom: 10vh;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #588896;
+  text-align: center;
+  margin: auto;
+}
+
+.footer h3 a {
+  color: white !important;
+  text-shadow: 1px 1px 1px black;
+  line-height: 10vh;
+}
