@@ -5,12 +5,12 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header-custom {
-  background-color: #588896 !important;
-  color: white !important;
+  background-color: #588896;
+  color: white;
   text-shadow: 1px 1px 1px black;
   text-align: center;
 }
@@ -59,8 +59,8 @@ body {
 }
 
 .button-custom {
-  background-color: #588896 !important;
-  color: white !important;
+  background-color: #588896;
+  color: white;
   text-shadow: 1px 1px 1px black;
   margin-top: 25px;
   width: 100%;

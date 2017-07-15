@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: #FFFFFF;
+}
+
+
+/********APP********/
+.main-wrapper {
+  min-height: 100% !important;
+  margin-bottom: 10vh;
+}
+
+/********FORM********/
+.button-custom {
+  margin-top: 30px;
+  text-align: center;
+  background-color: #23527c;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1em;
+  letter-spacing: 1.3px;
+}
+
+
+
+
+/********HEADER********/
+.header {
+  text-align: center;
+  background-color: #2F2E33;
+  color: #EFEFEF;
+}
+
+
+/********FOOTER********/
+.footer {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  margin: auto;
+  text-align: center;
+  background-color: #2F2E33;
+  color: #EFEFEF;
+}
+
+.footer a {
+  line-height: 10vh;
+  color: #EFEFEF;
+}
+
+.push, .footer {
+  height: 10vh;
+}
