@@ -1,10 +1,22 @@
 import React from "react";
+import autoBind from "react-autobind";
+
+//import components
+import Name from "../components/name.js";
 
 class NameContainer extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      names: [],
+      randomName: ""
+    }
+    autoBind(this);
+  }
   render() {
     return (
       <div>
-        namecont test
+        <Name name={this.state.names} />
       </div>
     )
   }

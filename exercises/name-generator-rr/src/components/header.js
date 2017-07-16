@@ -5,7 +5,7 @@ class Header extends React.Component {
     return (
       <div className="jumbotron header">
         <div className="row">
-          <h1>Name Generator</h1>
+          <h1>Random Name Generator</h1>
         </div>
       </div>
     )

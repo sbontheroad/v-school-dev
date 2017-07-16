@@ -6,13 +6,13 @@ class Form extends React.Component {
       <div>
         <div className="row">
           <div className="col-md-4">
-            <input className="form-control input" placeholder="type in a name" />
+            <input className="form-control input" placeholder="type in a name" value={this.props.names} onChange={(event) => {this.props.handleChange("names", event)}} />
           </div>
           <div className="col-md-4">
-            <input className="form-control input" placeholder="type in a name" />
+            <input className="form-control input" placeholder="type in a name" value={this.props.names} onChange={(event) => {this.props.handleChange("names", event)}}/>
           </div>
           <div className="col-md-4">
-            <input className="form-control input" placeholder="type in a name" />
+            <input className="form-control input" placeholder="type in a name" value={this.props.names} onChange={(event) => {this.props.handleChange("names", event)}}/>
           </div>
         </div>
         <div className="row button-row text-center">
