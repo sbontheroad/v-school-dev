@@ -11,7 +11,7 @@ import { bindActionCreators } from "redux";
 import Form from "../components/form.js";
 
 //get all actions and put them in an object called actionCreators
-import * as actionCreators from "../actions/"
+import * as actionCreators from "../actions/";
 
 class FormContainer extends React.Component {
   constructor() {

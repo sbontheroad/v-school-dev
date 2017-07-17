@@ -4,7 +4,7 @@ class Name extends React.Component {
   render() {
     return (
       <div>
-        <h3 className="output">{this.props.name}</h3>
+        <h3 className="output">{this.props.randomName}</h3>
       </div>
     )
   }
