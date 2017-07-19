@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1.4px;
+  /*background-color: #DEDDC8;*/
+  background-color: #1E1E1E;
+  margin-top: 0 !important;
+}
+
+.content-wrapper {
+  height: 100%;
+  margin-bottom: 10vh;
+  margin-top: 0 !important;
+}
+
+/********HEADER**********/
+.headerCont {
+  height: 25vh;
+  /*color: hotpink;*/
+  /*color: white;*/
+  /*color: #333333;*/
+  color: white;
+  text-shadow: .5px .5px .5px white;
+  text-align: center;
+  margin: 0 !important;
+  /*background-image: url("http://blog.topazlabs.com/wp-content/uploads/2014/04/horses3.jpg");*/
+  /*background-image: url("http://www.aurohomes.com/wp-content/uploads/2017/06/download-wallpaper-2560x1080-land-coast-sea-mountain-slopes-wave-throughout-best-bay-windows-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  border-bottom: 2px solid #1E1E1E;
+  margin-top: 0 !important;
+}
+
+h1 {
+  font-size: 3.7em;
+  letter-spacing: 4px;
+  font-family: 'Cinzel Decorative', cursive;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/********FORM**********/
+.form {
+  margin-top: 6vh;
+}
+
+.input {
+  margin-bottom: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-custom {
+  /*background-color: hotpink;*/
+  background-color: #C29F68;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 1.3px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-button {
+  text-align: center;
+}
+
+/********OUTPUT**********/
+/*.container-margin {
+  margin-top: 8vh;
+}*/
+
+.output {
+  width: 400px;
+  height: 350px;
+  margin: auto;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*2vh 0vh 2vh*/
+/*border: 2px solid #1E1E1E;*/
+
+.title {
+  text-align: center;
+  text-shadow: 1px 1px 1px white;
+  font-size: 1.7em;
+  margin-top: 15px;
+}
+
+.desc {
+  text-align: center;
+  text-shadow: 1px 1px 1px white;
+  font-size: 1.7em;
+  margin-top: 175px;
+}
+
+.output i {
+  margin-top: 6px;
+  color: transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+.output:hover i {
+  color: hotpink;
+  text-shadow: 1px 1px 1px white;
+}
+
+.post-col {
+ margin-top: 8vh;
+}
+
+/********FOOTER**********/
+.footer {
+  height: 10vh;
+  background-color: #1E1E1E;
+  text-shadow: 1px 1px 1px black;
+}
+
+.footer a {
+  /*color: hotpink !important;*/
+  color: #C29F68;
+  line-height: 10vh;
+}
+
+.footer h3 {
+  margin: 0 !important;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 2.7em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
