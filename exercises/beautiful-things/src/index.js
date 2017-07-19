@@ -11,7 +11,7 @@ import reducers from "./reducers/";
 import "./css/index.css";
 import Header from "./components/header.js";
 import FormContainer from "./containers/form-container.js";
-import OutputListContainer from "./containers/output-list-container.js";
+import OutputContainer from "./containers/output-container.js";
 import Footer from "./components/footer.js";
 
 //create after imports
@@ -24,7 +24,7 @@ class App extends React.Component {
         <div className="content-wrapper">
           <Header/>
                 <FormContainer/>
-                <OutputListContainer/>
+                <OutputContainer/>
         </div>
 
         <Footer />

@@ -1,0 +1,27 @@
+body {
+  background-color: beige;
+  background-image: url("http://wallpapercave.com/wp/saiUfL2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  letter-spacing: 1.3px;
+}
+
+.row-margin {
+  margin-top: 100px;
+}
+
+.search-input {
+  border-radius: 2px;
+  height: 25px;
+  width: 150px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
