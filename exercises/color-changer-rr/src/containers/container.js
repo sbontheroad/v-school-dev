@@ -27,7 +27,7 @@ class Container extends React.Component {
   render() {
     return (
       <div className="container-wrapper">
-        <Color handleClick={this.props.changeColor} color={this.props.color} />
+        <Color handleClick={this.props.loadColor} name={this.props.name} color={this.props.color} />
       </div>
     )
   }

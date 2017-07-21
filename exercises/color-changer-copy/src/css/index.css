@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin-top: 0;
+  background-color: black;
+}
+
+.button-custom {
+  height: 60px;
+  width: 120px;
+  background-color: hotpink;
+  border-radius: 4px;
+  border: 1px solid white;
+  letter-spacing: 1.3px;
+  color: white;
+  text-shadow: 1px 1px .5px black;
+  font-size: 1.6em;
+  font-family: 'Megrim', cursive;
+}
+
+.color-wrapper {
+  margin-top: 100px;
+}
+
+.color-box {
+  height: 400px;
+  width: 500px;
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color: black;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}

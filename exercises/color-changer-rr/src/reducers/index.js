@@ -1,12 +1,22 @@
 let defaultState = {
-  color: "blue"
+  color: "blue",
+  name: ""
 }
 
-const mainReducer = ( state = defaultState, action) => {
+const mainReducer = (state = defaultState, action) => {
   if (action.type === "COLOR") {
-    return {
-      ...state,
-      color: action.color
+    if(action.color === "#") {
+      return {
+        ...state,
+        color: "#fa417a"
+      }
+    } else {
+      console.log(action.color);
+      return {
+        ...state,
+        color: action.color,
+        name: action.name
+      }
     }
   } else {
     return {

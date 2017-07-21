@@ -10,6 +10,13 @@ body {
   background-color: black;
 }
 
+p {
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .button-custom {
   height: 60px;
   width: 120px;
