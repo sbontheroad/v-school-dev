@@ -8,6 +8,18 @@ body {
   height: 100vh;
   margin-top: 0 !important;
   background-color: white;
+  position: relative;
+  font-family: 'open-sans';
+}
+
+.app-wrapper {
+  height: 100%;
+  position: relative;
+}
+
+#root {
+  height: 100%;
+  position: relative;
 }
 
 
@@ -28,11 +40,36 @@ body {
   word-spacing: 10px;
 }
 
+
+
+/*******POSTS********/
+.item-posts {
+  background-color: #DCDEE4;
+  border-radius: 4px;
+  padding: .5px 10px 40px 10px;
+  margin: 20px 0px;
+}
+
+.remove {
+  float: right;
+}
+
+.edit-input {
+  margin: 8px 0 5px 0;
+}
+
+.edit-button {
+  margin: 5px 0;
+  float: right;
+}
+
+
 /*******FORM********/
 .button-custom {
   width: 60px;
-  height: 35px;
-  background-color: #44ACB7;
+  height: 30px;
+  font-family: 'open-sans';
+  background-color: #162A33;;
   color: white;
   text-shadow: 1px 1px 1px black;
   font-size: 1em;
@@ -49,4 +86,25 @@ body {
 
 .form-input-checkbox {
   color: white !important;
+}
+
+
+
+/*******FOOTER********/
+.footer {
+  width: 100%;
+  position: relative;
+  bottom: 0 !important;
+  height: 10vh;
+  /*background-color: black;*/
+  text-align: center;
+  margin: auto;
+}
+
+.footer h3 a {
+  font-family: 'open-sans';
+  word-spacing: 10px;
+  color: #162A33;
+  text-shadow: 1px 1px 1px WHITE;
+  line-height: 10vh;
 }
