@@ -18,8 +18,8 @@ body {
   margin: auto;
   width: 100%;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 50px;
   border-radius: 5px;
   color: white;
   text-shadow: 1px 1px 1px black;
@@ -33,6 +33,7 @@ body {
   width: 170px;
   height: 25px;
   margin-right: 6px;
+  margin-bottom: 10px;
 }
 
 .button {
