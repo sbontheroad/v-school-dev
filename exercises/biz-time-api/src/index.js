@@ -1,7 +1,7 @@
-install React from "react";
-install ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom"
 
-install "./css/index.css";
+import "./css/index.css";
 
 class App extends React.Component {
   render() {
