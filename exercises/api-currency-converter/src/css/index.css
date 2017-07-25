@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 20% 10%;
+  height: 100vh;
+  background-image: url("http://blog.oxforddictionaries.com/wp-content/uploads/currencies1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.currency-converter-wrapper {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 170px;
+  height: 25px;
+  margin-right: 6px;
+}
+
+.button {
+  height: 25px;
+  width: 50px;
+}
+
+.output {
+  font-size: 2em;
+  margin-top: 20px;
+}

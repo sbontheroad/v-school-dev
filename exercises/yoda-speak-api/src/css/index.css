@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 15% 10%;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: black;
+}
+
+.yoda-speak-container {
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  color: #a5ae5a;
+  text-shadow: .5px .5px .5px white;
+  font-size: 6.5em;
+  margin-bottom: 30px;
+  letter-spacing: 1.4px;
+}
+
+.input {
+  width: 60%;
+  min-width: 250px;
+  max-width: 500px;
+  height: 25px;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  padding-left: 2px;
+}
+
+.button {
+  width: 75px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #a5ae5a;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: .9em;
+}
+
+.output {
+  font-size: 2.5em;
+  padding-top: 15px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.img {
+  background-image: url("http://bunopus.github.io/presentation-angular-2/img/yoda.png");
+  height: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
