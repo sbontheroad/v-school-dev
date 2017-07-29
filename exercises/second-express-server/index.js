@@ -1,4 +1,5 @@
 const express = require('express');
+//handles JSON
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const uuid = require('uuid/v1');

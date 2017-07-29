@@ -8,7 +8,7 @@ class HitList extends React.Component {
   genHits() {
     console.log("genhits");
     return this.props.hits.map((item, index) => {
-      return <HitContainer key={index + item.name} hit={item} />
+      return <HitContainer handleEdit={this.props.handleEdit} handleRemove={this.props.handleRemove} key={index + item.name} hit={item} />
     });
   }
   render() {

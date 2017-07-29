@@ -14,7 +14,7 @@ class HitListContainer extends React.Component {
   render() {
     return (
       <div className="hit-wrapper">
-        <HitList hits={this.props.hits} />
+        <HitList hits={this.props.hits} handleRemove={this.props.deleteData} handleEdit={this.props.editData} />
       </div>
     )
   }
