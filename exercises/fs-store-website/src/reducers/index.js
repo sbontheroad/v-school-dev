@@ -1,7 +1,7 @@
 let defaultState = {
   products: [
     {
-      image: "global",
+      image: "",
       title: "",
       desc: "",
       price: ""

@@ -7,17 +7,22 @@ class ProductFormContainer extends React.Component {
   constructor() {
     super();
       this.state = {
-        image: "test",
-        title: "test",
-        desc: "test",
-        price: 30
+        image: "",
+        title: "",
+        desc: "",
+        price: ""
     }
     autoBind(this);
+  }
+  handleChange(key, event) {
+    this.setState ({
+      [key]: event.target.value
+    })
   }
   render() {
     return (
       <div className="product-form-wrapper">
-        <ProductForm input={this.state} />
+        <ProductForm input={this.state} handleClick={this.props.addData} handleChange={this.handleChange} />
       </div>
     )
   }

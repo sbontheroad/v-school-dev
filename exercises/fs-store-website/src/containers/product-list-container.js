@@ -6,7 +6,7 @@ class ProductListContainer extends React.Component {
   render() {
     return (
       <div className="product-list-container-wrapper">
-        <ProductList />
+        <ProductList products={this.props.products} />
       </div>
     )
   }
