@@ -61,7 +61,7 @@ productRouter.put("/:id", (req, res) => {
       };
       return res.status(200).send({
         message: "AW YEAH (SUCCESS)"
-      });ß
+      });
     }
   }
   return res.status(404).send({
