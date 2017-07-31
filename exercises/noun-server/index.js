@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 //import routes
-let dogRouter = require("./routes/dog.js");
+let productRouter = require("./routes/product.js");
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //use our routes
-app.use("/dogs", dogRouter);
+app.use("/product", productRouter);
 
 app.listen(PORT, () => {
   console.log(`Starting this kick ass server on ${PORT}`);

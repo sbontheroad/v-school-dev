@@ -1,21 +1,15 @@
 //import express
 let express = require('express');
 //make a mini express app called a router
-let dogRouter = express.Router();
+let productRouter = express.Router();
 const uuid = require('uuid/v1');
 
-let dogs = [
-  {
-    breed: "Shepard",
-    weight: 110,
-    temperment: "loyal",
-    id: "35bd1e90-73de-11e7-b948-937614c41794"
-    }
-]
+let products = [];
 
-dogRouter.get("/", (req, res) => {
+
+productRouter.get("/", (req, res) => {
   //write search function for queries
-  let search = dogs.filter((item) => {
+  let search = products.filter((item) => {
     for(let key in req.query) {
       if(req.query[key] != item[key]){
         return false;
@@ -26,17 +20,17 @@ dogRouter.get("/", (req, res) => {
   res.status(200).send({"message" : "SUCCESS, data returned", data: search});
 });
 
-dogRouter.post("/", (req, res) => {
-  let newDogs = req.body;
-  newDogs.id = uuid();
-  dogs.push(newDogs);
+productRouter.post("/", (req, res) => {
+  let newProducts = req.body;
+  newProducts.id = uuid();
+  products.push(newProducts);
   res.status(201).send({"message" : "SUCCESS, data was posted"});
 });
 
-dogRouter.get("/:id", (req, res) => {
-  for(let i = 0; i < dogs.length; i++) {
-    if(dogs[i].id === req.params.id) {
-      res.send(dogs[i]);
+productRouter.get("/:id", (req, res) => {
+  for(let i = 0; i < products.length; i++) {
+    if(products[i].id === req.params.id) {
+      res.send(products[i]);
       res.status(201).send({"message" : "SUCCESS, data was posted"});
     }
   }
@@ -45,10 +39,10 @@ dogRouter.get("/:id", (req, res) => {
   });
 });
 
-dogRouter.delete("/:id", (req, res) => {
-  for(let i = 0; i < dogs.length; i++) {
-    if(dogs[i].id === req.params.id) {
-      dogs.splice(i, 1);
+productRouter.delete("/:id", (req, res) => {
+  for(let i = 0; i < products.length; i++) {
+    if(products[i].id === req.params.id) {
+      products.splice(i, 1);
       res.status(200).send({"message" : "SUCCESS, data was deleted"});
     }
   }
@@ -57,17 +51,17 @@ dogRouter.delete("/:id", (req, res) => {
   });
 });
 
-dogRouter.put("/:id", (req, res) => {
-  for(let i = 0; i < dogs.length; i++) {
-    if(dogs[i].id === req.params.id) {
+productRouter.put("/:id", (req, res) => {
+  for(let i = 0; i < products.length; i++) {
+    if(products[i].id === req.params.id) {
       for(let key in req.body) {
-        if(dogs[i][key] = req.body[key]) {
-          dogs[i][key] = req.body[key];
+        if(products[i][key] = req.body[key]) {
+          products[i][key] = req.body[key];
         }
       };
       return res.status(200).send({
         message: "AW YEAH (SUCCESS)"
-      });
+      });ß
     }
   }
   return res.status(404).send({
@@ -76,4 +70,4 @@ dogRouter.put("/:id", (req, res) => {
 });
 
 
-module.exports = dogRouter;
+module.exports = productRouter;

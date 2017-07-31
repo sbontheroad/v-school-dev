@@ -1,12 +1,5 @@
 let defaultState = {
-  products: [
-    {
-      image: "",
-      title: "",
-      desc: "",
-      price: ""
-    }
-  ]
+  products: []
 }
 
 const mainReducer = (state = defaultState, action) => {

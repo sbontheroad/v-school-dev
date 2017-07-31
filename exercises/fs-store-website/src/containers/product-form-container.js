@@ -1,6 +1,10 @@
 import React from "react";
 import autoBind from "react-autobind";
 
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import * as actionCreators from "../actions";
+
 import ProductForm from "../components/product-form.js";
 
 class ProductFormContainer extends React.Component {
@@ -28,4 +32,12 @@ class ProductFormContainer extends React.Component {
   }
 }
 
-export default ProductFormContainer;
+const mapStateToProps = (state) => {
+  return state;
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators(actionCreators, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProductFormContainer);

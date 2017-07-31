@@ -10,7 +10,7 @@ import ProductContainer from "../containers/product-container.js";
 class ProductList extends React.Component {
   genProduct() {
     return this.props.products.map((item, index) => {
-      return <ProductContainer key={index + item.name} product={item} />
+      return <ProductContainer handleEdit={this.props.handleEdit} handleRemove={this.props.handleRemove} key={index + item.id} product={item} />
     })
   }
   render() {
