@@ -8,7 +8,7 @@ class ProductContainer extends React.Component {
     super(props);
     this.state = {
       ...this.props.product,
-      // edit: true
+      edit: true
     }
     autoBind(this);
   }
@@ -17,10 +17,15 @@ class ProductContainer extends React.Component {
       [key]: event.target.value
     })
   }
+  toggleEdit() {
+    this.setState({
+      edit: !this.state.edit
+    });
+  }
   render() {
     return (
       <div className="product-container-wrapper">
-        <Product product={this.props.product} input={this.state} handleUpdate={this.handleUpdate} handleEdit={this.props.handleEdit} handleRemove={this.props.handleRemove} />
+        <Product product={this.props.product} input={this.state} toggleEdit={this.toggleEdit} handleUpdate={this.handleUpdate} handleEdit={this.props.handleEdit} handleRemove={this.props.handleRemove} />
       </div>
     )
   }

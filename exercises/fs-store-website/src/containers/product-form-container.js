@@ -23,10 +23,18 @@ class ProductFormContainer extends React.Component {
       [key]: event.target.value
     })
   }
+  clearInputs() {
+    this.setState ({
+      image: "",
+      title: "",
+      desc: "",
+      price: ""
+    })
+  }
   render() {
     return (
       <div className="product-form-wrapper">
-        <ProductForm input={this.state} handleClick={this.props.addData} handleChange={this.handleChange} />
+        <ProductForm input={this.state} clearInputs={this.clearInputs} handleClick={this.props.addData} handleChange={this.handleChange} />
       </div>
     )
   }

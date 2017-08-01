@@ -6,7 +6,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar-wrapper">
-        <img className="logo-navbar" src="https://lovelandfireandice.com/wp-content/uploads/logo-placeholder-generic.200x200.png" alt="logo placeholder"></img>
+        <img className="logo-navbar" src="http://via.placeholder.com/300x150" alt="logo placeholder"></img>
         <Link to="/">Home</Link>
         <Link to="/addproduct">Add Product</Link>
         <Link to="/shop">Shop</Link>

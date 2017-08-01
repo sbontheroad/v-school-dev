@@ -8,7 +8,7 @@ class ProductForm extends React.Component {
         <input className="input" placeholder="enter title" type="text" value={this.props.input.title} onChange={(event) => {this.props.handleChange("title", event)}} />
         <input className="input" placeholder="enter description" type="text" value={this.props.input.desc} onChange={(event) => {this.props.handleChange("desc", event)}} />
         <input className="input" placeholder="enter price" type="text" value={this.props.input.price} onChange={(event) => {this.props.handleChange("price", event)}} />
-        <button className="button product-form-button" onClick={() => {this.props.handleClick(this.props.input)}}>add product</button>
+        <button className="button product-form-button" onClick={() => {this.props.handleClick(this.props.input); this.props.clearInputs();}}>add product</button>
       </div>
     )
   }
