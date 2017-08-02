@@ -1,0 +1,14 @@
+{
+  "name": "postgres-practice",
+  "version": "1.0.0",
+  "description": "my first postgres project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sarah Baldwin",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "pg": "^7.0.2"
+  }
+}
