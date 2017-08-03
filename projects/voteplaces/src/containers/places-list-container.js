@@ -1,6 +1,8 @@
 import React from "react";
 // import autoBind from "react-autobind";
 
+import { Link } from "react-router-dom";
+
 //redux
 import { connect } from "react-redux";
 import * as actionCreators from "../actions";
@@ -15,7 +17,7 @@ class PlacesListContainer extends React.Component {
   render() {
     return (
       <div className="places-list-container-wrapper">
-        <PlacesList places={this.props.places} handleUp={this.props.voteUp} handleDown={this.props.voteDown} />
+        <PlacesList places={this.props.places} handleDelete={this.props.deleteData} handleUp={this.props.voteUp} handleDown={this.props.voteDown} />
       </div>
     )
   }

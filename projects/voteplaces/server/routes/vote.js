@@ -98,5 +98,23 @@ voteRouter.put("/voteDown/:id", (req, res) => {
   });
 });
 
+voteRouter.put("/comment/:id", (req, res) => {
+  Vote.findOne({"_id":req.params.id}, (err, data) => {
+    if(err) {
+      res.status(500).send({"message":"ERROR within server", err});
+    } else if (data === null) {
+      res.status(404).send({"message":`Item with id ${req.params.id} not found`, err})
+    } else {
+      data.comments.push(req.body.comment);
+      data.save((err, data) => {
+        if (err) {
+          res.status(500).send({"message":"ERROR voteDown on server", err});
+        } else {
+          res.status(200).send({"message":`SUCCESS comment for ${req.params.id} was posted`, data});
+        }
+      });
+    }
+  });
+});
 
 module.exports = voteRouter;

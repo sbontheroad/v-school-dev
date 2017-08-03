@@ -1,6 +1,8 @@
 let defaultState = {
     places: [],
-    placePage: {}
+    placePage: {
+      comments: []
+    }
 }
 
 const mainReducer = (state = defaultState, action) => {
@@ -9,7 +11,12 @@ const mainReducer = (state = defaultState, action) => {
     ...state,
     places: action.data
   }
-  } else {
+} else if (action.type === "INDIV_DATA") {
+  return {
+    ...state,
+    placePage: action.data
+  }
+} else {
     return {
       ...state
     }

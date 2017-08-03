@@ -22,7 +22,8 @@ let voteSchema = new Schema ({
   voteDown: {
     type: Number,
     default: 0
-  }
+  },
+  comments: [String]
 });
 
 module.exports = mongoose.model('votelist', voteSchema);
