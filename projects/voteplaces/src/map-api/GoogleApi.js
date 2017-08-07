@@ -1,8 +1,8 @@
 import React, { PropTypes as T } from 'react'
 import ReactDOM from 'react-dom'
 
-import cache from 'utils/cache'
-import GoogleApi from 'utils/GoogleApi'
+import cache from './ScriptCache'
+import GoogleApi from './GoogleApi'
 
 const defaultMapConfig = {}
 export const wrapper = (options) => (WrappedComponent) => {
@@ -50,7 +50,7 @@ export const wrapper = (options) => (WrappedComponent) => {
     componentWillMount() {
       this.scriptCache = cache({
         google: GoogleApi({
-          apiKey: apiKey,
+          apiKey: 'AIzaSyCmXjU9F_wNJnBlPI0rOeStQDM_pRNiE4s',
           libraries: libraries
         })
       });

@@ -19,6 +19,7 @@ export const ScriptCache = (function(global) {
     }
 
     Cache._scriptTag = (key, src) => {
+      console.log(typeof key);
       if (!scriptMap.has(key)) {
         let tag = document.createElement('script');
         let promise = new Promise((resolve, reject) => {
@@ -88,6 +89,7 @@ export const ScriptCache = (function(global) {
     }
 
     Object.keys(scripts).forEach(function(key) {
+      console.log(scripts);
       const script = scripts[key];
       Cache[key] = {
         tag:    Cache._scriptTag(key, script),

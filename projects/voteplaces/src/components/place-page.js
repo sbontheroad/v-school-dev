@@ -1,5 +1,6 @@
 import React from "react";
 
+import MapContainer from "../map-api/map-container.js";
 
 class PlacePage extends React.Component {
   genComments() {
@@ -20,6 +21,9 @@ class PlacePage extends React.Component {
         <div className="comment-area">
           <textarea value={this.props.input.comment} onChange={(event) => {this.props.handleComment(event)}}></textarea>
           <button onClick={() => {this.props.addComment(this.props.placePage._id, this.props.input.comment); this.props.clearInput();}}>submit</button>
+        </div>
+        <div className="google-map">
+          <MapContainer />
         </div>
         <div>
           {this.genComments()}
