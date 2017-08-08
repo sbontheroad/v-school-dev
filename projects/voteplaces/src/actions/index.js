@@ -33,7 +33,8 @@ export function addData(data) {
   }
 }
 
-export function voteUp(id) {
+export function voteUp(id, e) {
+  console.log(e);
   return (dispatch) => {
     return axios.put(`http://localhost:8080/votes/voteUp/${id}`).then((response) => {
       dispatch(loadData());

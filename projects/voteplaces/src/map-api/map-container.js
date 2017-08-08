@@ -1,28 +1,39 @@
+//MAPS API key
+//AIzaSyCZUQ1J_gOtxxYvVwDzInu1pDsz7qBgzGM
 import React from "react";
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
-import GoogleApiComponent from "./GoogleApiComponent.js";
-import Map from "./map.js";
-
-
+// import Map from "./map.js";
 
 
-export class Container extends React.Component {
-  render() {
-    const style = {
-      width: '500px',
-      height: '500px',
-      border: '1px solid black'
-    }
-    console.log(this.props.google);
+export class MapContainer extends React.Component {
+render() {
+  const style = {
+    margin: 'auto',
+    width: '90vw',
+    height: '500px',
+    border: '1px solid black'
+  }
     return (
-      <div style={style}>
-        <Map google={this.props.google} />
-      </div>
-    )
+      <Map google={this.props.google} zoom={14} style={style} initialCenter={{
+            lat: 40.854885,
+            lng: -88.081807
+          }} >
+
+        <Marker onClick={this.onMarkerClick}
+                name={'Current location'} />
+
+        <InfoWindow onClose={this.onInfoWindowClose}>
+            <div>
+              {/* <h1>{this.state.selectedPlace.name}</h1> */}
+            </div>
+        </InfoWindow>
+      </Map>
+    );
   }
 }
 
 
-export default GoogleApiComponent({
-  apiKey: 'AIzaSyCmXjU9F_wNJnBlPI0rOeStQDM_pRNiE4s'
-}) (Container)
+export default GoogleApiWrapper({
+  apiKey: ('AIzaSyCZUQ1J_gOtxxYvVwDzInu1pDsz7qBgzGM')
+})(MapContainer)

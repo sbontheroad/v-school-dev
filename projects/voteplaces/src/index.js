@@ -15,8 +15,8 @@ import thunk from "redux-thunk";
 
 //import components
 import "./css/index.css";
-import Navbar from "./components/navbar.js";
-import FormContainer from "./containers/form-container.js";
+import Navbar from "./navbar/navbar.js";
+import FormContainer from "./add-place-form/form-container.js";
 import PlacesListContainer from "./containers/places-list-container.js";
 import PlacePageContainer from "./containers/place-page-container.js";
 
@@ -29,7 +29,7 @@ class App extends React.Component {
       <div className="app-wrapper">
         <BrowserRouter>
           <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <Switch>
               <Route exact path="/" component={PlacesListContainer} />
               <Route exact path="/addPlace" component={FormContainer} />

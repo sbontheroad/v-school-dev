@@ -14,15 +14,20 @@ class PlacesList extends React.Component {
   render () {
     return (
       <div className="places-list-wrapper">
-        <div className="home-page-description">
-          <h1>Dream. Discover. Share.</h1>
-          <p>Explore amazing things to see here. Love it or hate it.  The best will rise to the top.</p>
-          <Link to="/addPlace"><button className="add-place-button button">add place</button></Link>
-        </div>
         <center>
-          <div className="container-fluid">
-            <div className="row places-row">
+          <div className="full-page-layout">
+
+            <div className="home-page-description">
+              <div className="home-page-description-child">
+                <h1>Dream. Discover. Share.</h1>
+                <p>Explore amazing places here. Love your favorites.  The best will rise to the top.</p>
+                <Link to="/addPlace"><button className="add-place-button button">add place</button></Link>
+              </div>
+            </div>
+            {/* row places-row */}
+            <div className="place-col">
                 {this.genPlaces()}
+
             </div>
           </div>
         </center>

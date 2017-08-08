@@ -1,4 +1,6 @@
 import React from "react";
+import FontAwesome from "react-fontawesome";
+
 
 import MapContainer from "../map-api/map-container.js";
 
@@ -15,9 +17,9 @@ class PlacePage extends React.Component {
         <h1>{this.props.placePage.name}</h1>
         <h2>{this.props.placePage.location}</h2>
         <p>{this.props.placePage.description}</p>
-        <button className="up-button button" onClick={() => {this.props.handleUp(this.props.placePage._id)}}>love it</button>
-        <h2 className="count">{(this.props.placePage.voteUp) - (this.props.placePage.voteDown)}</h2>
-        <button className="down-button button" onClick={() => {this.props.handleDown(this.props.placePage._id)}}>hate it</button>
+        <button className="heart-button" onClick={() => {this.props.handleUp(this.props.placePage._id)}}><FontAwesome className="heart-button" name='heart' size='2x' /></button>
+        <p className="count">( {(this.props.placePage.voteUp) - (this.props.placePage.voteDown)} )</p>
+        {/* <button className="down-button button" onClick={() => {this.props.handleDown(this.props.placePage._id)}}>hate it</button> */}
         <div className="comment-area">
           <textarea value={this.props.input.comment} onChange={(event) => {this.props.handleComment(event)}}></textarea>
           <button onClick={() => {this.props.addComment(this.props.placePage._id, this.props.input.comment); this.props.clearInput();}}>submit</button>

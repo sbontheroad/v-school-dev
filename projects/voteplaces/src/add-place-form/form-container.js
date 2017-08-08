@@ -5,7 +5,7 @@ import autoBind from "react-autobind";
 import { connect } from "react-redux";
 import * as actionCreators from "../actions";
 
-import Form from "../components/form.js";
+import Form from "../add-place-form/form.js";
 
 class FormContainer extends React.Component {
   constructor() {
