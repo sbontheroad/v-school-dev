@@ -9,13 +9,12 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 export class MapContainer extends React.Component {
 render() {
   const style = {
-    margin: 'auto',
-    width: '90vw',
+    width: '80vw',
     height: '500px',
     border: '1px solid black'
   }
     return (
-      <Map google={this.props.google} zoom={14} style={style} initialCenter={{
+      <Map className="google-map" google={this.props.google} zoom={14} style={style} initialCenter={{
             lat: 40.854885,
             lng: -88.081807
           }} >

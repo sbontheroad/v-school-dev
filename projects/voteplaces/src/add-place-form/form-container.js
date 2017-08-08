@@ -18,6 +18,9 @@ class FormContainer extends React.Component {
     }
     autoBind(this);
   }
+  componentWillMount() {
+    
+  }
 handleChange(key, event) {
   this.setState ({
     [key]: event.target.value

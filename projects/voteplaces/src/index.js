@@ -28,14 +28,16 @@ class App extends React.Component {
     return (
       <div className="app-wrapper">
         <BrowserRouter>
-          <div>
-            {/* <Navbar /> */}
-            <Switch>
-              <Route exact path="/" component={PlacesListContainer} />
-              <Route exact path="/addPlace" component={FormContainer} />
-              <Route exact path="/place/:id" component={PlacePageContainer} />
-            </Switch>
-          </div>
+          <scroll>
+            <div>
+              <Navbar />
+              <Switch>
+                <Route exact path="/" component={PlacesListContainer} />
+                <Route exact path="/addPlace" component={FormContainer} />
+                <Route exact path="/place/:id" component={PlacePageContainer} />
+              </Switch>
+            </div>
+          </scroll>
         </BrowserRouter>
       </div>
     )

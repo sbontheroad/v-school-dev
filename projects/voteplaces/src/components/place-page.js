@@ -20,14 +20,12 @@ class PlacePage extends React.Component {
         <button className="heart-button" onClick={() => {this.props.handleUp(this.props.placePage._id)}}><FontAwesome className="heart-button" name='heart' size='2x' /></button>
         <p className="count">( {(this.props.placePage.voteUp) - (this.props.placePage.voteDown)} )</p>
         {/* <button className="down-button button" onClick={() => {this.props.handleDown(this.props.placePage._id)}}>hate it</button> */}
-        <div className="comment-area">
-          <textarea value={this.props.input.comment} onChange={(event) => {this.props.handleComment(event)}}></textarea>
-          <button onClick={() => {this.props.addComment(this.props.placePage._id, this.props.input.comment); this.props.clearInput();}}>submit</button>
-        </div>
-        <div className="google-map">
+        <div >
           <MapContainer />
         </div>
-        <div>
+        <div className="comment-area">
+          <textarea className="comment-text-area" value={this.props.input.comment} onChange={(event) => {this.props.handleComment(event)}}></textarea>
+          <button className="place-page-button" onClick={() => {this.props.addComment(this.props.placePage._id, this.props.input.comment); this.props.clearInput();}}>submit</button>
           {this.genComments()}
         </div>
       </div>
