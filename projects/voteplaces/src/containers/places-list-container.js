@@ -17,7 +17,7 @@ class PlacesListContainer extends React.Component {
   render() {
     return (
       <div className="places-list-container-wrapper">
-        <PlacesList places={this.props.places} handleDelete={this.props.deleteData} handleUp={this.props.voteUp} handleDown={this.props.voteDown} />
+        <PlacesList isShowing={this.props.isShowingHomeDesc} places={this.props.places} handleDelete={this.props.deleteData} handleUp={this.props.voteUp} handleDown={this.props.voteDown} />
       </div>
     )
   }

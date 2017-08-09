@@ -2,14 +2,15 @@ import React from "react";
 import FontAwesome from "react-fontawesome";
 
 
-import MapContainer from "../map-api/map-container.js";
+import MapContainer from "../google-map/map-container.js";
 
 class PlacePage extends React.Component {
   genComments() {
     return this.props.placePage.comments.map((item, i) => {
-      return (<p key={item + i}>{item}</p>)
+      return (<p key={item + i}>username: {item}</p>)
     });
   }
+
   render() {
     return (
       <div className="place-page-wrapper">
@@ -24,9 +25,12 @@ class PlacePage extends React.Component {
           <MapContainer />
         </div>
         <div className="comment-area">
-          <textarea className="comment-text-area" value={this.props.input.comment} onChange={(event) => {this.props.handleComment(event)}}></textarea>
+          <textarea className="comment-text-area" placeholder="Add a comment..."  value={this.props.input.comment} onChange={(event) => {this.props.handleComment(event)}}></textarea>
           <button className="place-page-button" onClick={() => {this.props.addComment(this.props.placePage._id, this.props.input.comment); this.props.clearInput();}}>submit</button>
+
+        <div className="comment-output">
           {this.genComments()}
+        </div>
         </div>
       </div>
     )

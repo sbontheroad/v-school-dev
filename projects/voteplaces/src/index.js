@@ -5,7 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 //router
-import { Route, BrowserRouter, Switch } from "react-router-dom";
+import { Route, BrowserRouter, Switch, Scroll } from "react-router-dom";
 
 //redux
 import { createStore, applyMiddleware } from "redux";
@@ -19,6 +19,7 @@ import Navbar from "./navbar/navbar.js";
 import FormContainer from "./add-place-form/form-container.js";
 import PlacesListContainer from "./containers/places-list-container.js";
 import PlacePageContainer from "./containers/place-page-container.js";
+import ScrollToTop from "./components/scroll.js";
 
 //create the store
 const store = createStore(reducers, applyMiddleware(thunk));
@@ -28,7 +29,7 @@ class App extends React.Component {
     return (
       <div className="app-wrapper">
         <BrowserRouter>
-          <scroll>
+          <ScrollToTop>
             <div>
               <Navbar />
               <Switch>
@@ -37,7 +38,7 @@ class App extends React.Component {
                 <Route exact path="/place/:id" component={PlacePageContainer} />
               </Switch>
             </div>
-          </scroll>
+          </ScrollToTop>
         </BrowserRouter>
       </div>
     )

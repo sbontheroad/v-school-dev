@@ -62,7 +62,7 @@ class PlacesList extends React.Component {
         <center>
           <div className={`full-page-layout ${this.navPaddingTop()}`} >
 
-            <div className={`home-page-description ${this.hideHomePageDescription()}`} style={{opacity:this.state.opacity}}>
+            <div className={`home-page-description ${this.hideHomePageDescription()}`} style={{opacity:this.state.opacity, display: this.props.isShowing ? "inherit" : "none"}}>
               <div className="home-page-description-child">
                 <h1>Dream. Discover. Share.</h1>
                 <p>Explore amazing places here. Love your favorites.  The best will rise to the top.</p>

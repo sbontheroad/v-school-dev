@@ -1,12 +1,26 @@
 let defaultState = {
   lat: 40.7608,
   lng: -111.8910,
-  marker: []
+  markers: [],
+  selected: null
 };
 
 const mainReducer = (state = defaultState, action) => {
-  return {
-    ...state
+  if(action.type === "SET_MARKERS") {
+    return {
+      ...state,
+      markers: action.data
+    }
+  } else if (action.type === "SET_CURRENT") {
+    console.log("called set current", action.data);
+    return {
+      ...state,
+      selected: action.data
+    }
+  } else {
+    return {
+      ...state
+    }
   }
 }
 

@@ -199,14 +199,12 @@ font-family: 'Lato', sans-serif;*/
 
 .place-page-wrapper h1 {
   font-size: 3.4em;
-  padding-top: 10px;
-
 }
 
 .place-page-wrapper h2 {
   font-size: 2em;
   margin-top: 0 !important;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .place-page-wrapper p {
@@ -216,7 +214,7 @@ font-family: 'Lato', sans-serif;*/
 
 .place-page-image {
   margin-top: 100px;
-  max-height: 70vh;
+  max-height: 65vh;
 }
 
 /*.heart-button {
@@ -227,26 +225,32 @@ font-family: 'Lato', sans-serif;*/
 
 }*/
 
-
+/*.map-container {
+//in maps container
+}
 
 .google-map {
-  margin: 30px 10%;
-  /*text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;*/
-}
+//in maps container
+}*/
 
 .comment-area {
   padding-top: 20px;
-  margin-top: 550px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .comment-text-area {
-  height: 150px;
-  width: 30%;
+  height: 100px;
+  width: 40%;
   display: block;
   margin:auto;
+  font-family: 'Lato', sans-serif;
+  padding: 5px;
+}
+
+.comment-output {
+  font-family: 'Lato', sans-serif;
+  margin: 20px auto;
 }
 
 .place-page-button {
@@ -274,7 +278,7 @@ font-family: 'Lato', sans-serif;*/
 }
 
 .form-wrapper {
-  padding-top: 130px;
+  padding-top: 100px;
   margin: auto;
   text-align: center;
   font-family: 'Spectral', serif;
@@ -310,6 +314,11 @@ font-family: 'Lato', sans-serif;*/
   color: #23527c;
 }
 
+.add-map-marker-form {
+  margin: 40px auto 0px auto;
+  text-align: center;
+
+}
 
 
 @media (max-width: 1400px) {

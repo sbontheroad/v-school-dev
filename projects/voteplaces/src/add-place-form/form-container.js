@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import * as actionCreators from "../actions";
 
 import Form from "../add-place-form/form.js";
+import MapContainer from "../google-map/map-container.js";
 
 class FormContainer extends React.Component {
   constructor() {
@@ -19,7 +20,7 @@ class FormContainer extends React.Component {
     autoBind(this);
   }
   componentWillMount() {
-    
+    this.props.hideDesc();
   }
 handleChange(key, event) {
   this.setState ({
@@ -38,6 +39,7 @@ clearInputs() {
     return (
       <div className="form-container-wrapper">
         <Form input={this.state} handleClick={this.props.addData} handleChange={this.handleChange} clearInputs={this.clearInputs} />
+        <MapContainer />
       </div>
     )
   }

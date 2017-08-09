@@ -10,13 +10,17 @@ import reducers from "./reducers/";
 import thunk from "redux-thunk";
 
 import MapContainer from "./google-map/map-container.js";
+import FormContainer from "./google-map/form/form-container.js";
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
 class App extends React.Component {
   render () {
     return (
-      <MapContainer />
+      <div>
+        <FormContainer />
+        <MapContainer />
+      </div>
     )
   }
 }

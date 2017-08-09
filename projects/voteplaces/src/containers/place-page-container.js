@@ -21,7 +21,7 @@ class PlacePageContainer extends React.Component {
       comment: event.target.value
     });
   }
-  
+
   clearInput() {
     this.setState({
       comment: ""
@@ -29,6 +29,7 @@ class PlacePageContainer extends React.Component {
   }
   componentWillMount(){
     this.props.loadDataById(this.props.match.params.id);
+    this.props.hideDesc();
   }
   render() {
     return (
