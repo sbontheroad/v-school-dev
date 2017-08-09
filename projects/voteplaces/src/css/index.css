@@ -106,7 +106,6 @@ font-family: 'Lato', sans-serif;*/
 .image-wrapper img {
   width: 100% !important;
   height: auto !important;
-  margin-bottom: 10px;
   /*position: relative;*/
 }
 
@@ -148,6 +147,7 @@ font-family: 'Lato', sans-serif;*/
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .hover-block {

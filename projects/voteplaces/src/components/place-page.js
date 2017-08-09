@@ -20,7 +20,7 @@ class PlacePage extends React.Component {
         <button className="heart-button" onClick={() => {this.props.handleUp(this.props.placePage._id)}}><FontAwesome className="heart-button" name='heart' size='2x' /></button>
         <p className="count">( {(this.props.placePage.voteUp) - (this.props.placePage.voteDown)} )</p>
         {/* <button className="down-button button" onClick={() => {this.props.handleDown(this.props.placePage._id)}}>hate it</button> */}
-        <div >
+        <div className="map-container">
           <MapContainer />
         </div>
         <div className="comment-area">
