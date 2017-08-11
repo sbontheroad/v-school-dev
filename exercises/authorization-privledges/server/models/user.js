@@ -20,10 +20,10 @@ let userSchema = new Schema ({
   }
 });
 
-// userSchema.pre("save", function(next) {
-//   this.password = bcrypt.hashSync(this.password + this.username, salt);
-//   next();
-// });
+userSchema.pre("save", function(next) {
+  this.password = bcrypt.hashSync(this.password + this.username, salt);
+  next();
+});
 
 userSchema.methods.auth = function(passwordAttempt, cb) {
   bcrypt.compare(passwordAttempt + this.username, this.password, (err, result) => {

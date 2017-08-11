@@ -1,18 +1,11 @@
 let express = require('express');
 let authRouter = express.Router();
-let expressJwt = require('express-jwt');
 
 //import settings
 let settings = require('../config/settings.js');
 
-//need if you want someone signed in to use
-let authorization = expressJwt({secret: settings.secret});
-//import privledges - admin
-let admin = require('../middleware/admin.js');
-
 //import user model
 let User = require('../models/user.js');
-let UserQue = require('../models/userque.js');
 
 //import passport modules
 let passport = require('passport');
@@ -67,34 +60,15 @@ authRouter.post('/login', passport.authenticate("local", {session: false}), (req
 
 
 //post userSchema
-authRouter.post('/signup', authorization, (req, res) => {
-  User.findOne({username: req.body.username}, (err, result) => {
+authRouter.post('/signup', (req, res) => {
+  let makeUser = new User(req.body);
+  makeUser.save((err, result) => {
     if(err) {
       res.status(500).send({"message":"ERROR within server", err});
-    } else if (result !== null) {
-      res.status(400).send({"message": "Username is already taken"});
     } else {
-      let makeUser = new UserQue(req.body);
-      makeUser.save((err, result) => {
-        if(err) {
-          res.status(500).send({"message":"ERROR within server", err});
-        } else {
-          res.status(201).send({"message":`User ${result.username} was created`});
-        }
-      });
+      res.status(201).send({"message":`User ${result.username} was created`});
     }
   });
 });
-
-// authRouter.post('/signup', (req, res) => {
-//   let makeUser = new User(req.body);
-//   makeUser.save((err, result) => {
-//     if(err) {
-//       res.status(500).send({"message":"ERROR within server", err});
-//     } else {
-//       res.status(201).send({"message":`User ${result.username} was created`});
-//     }
-//   });
-// });
 
 module.exports = authRouter;
