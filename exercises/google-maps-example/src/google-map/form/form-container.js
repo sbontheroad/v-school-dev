@@ -9,6 +9,7 @@ class FormContainer extends React.Component {
   constructor() {
     super();
     this.state = {
+      address: "",
       lat: "",
       lng: "",
       label: ""
@@ -21,7 +22,11 @@ class FormContainer extends React.Component {
     })
   }
   handleClick(data) {
-    this.props.addMarker(data);
+    if(data.address === "") {
+      this.props.addMarker(data);
+    } else {
+      this.props.getLatAndLng(data.label, data.address);
+    }
     this.setState({
       lat: "",
       lng: "",

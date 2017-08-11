@@ -17,6 +17,12 @@ const mainReducer = (state = defaultState, action) => {
       ...state,
       selected: action.data
     }
+  } else if (action.type === "SET_FOCUS") {
+    return {
+      ...state,
+      lat: action.lat,
+      lng: action.lng
+    }
   } else {
     return {
       ...state

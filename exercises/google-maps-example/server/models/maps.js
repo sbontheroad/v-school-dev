@@ -12,10 +12,7 @@ let markerSchema = new Schema ({
       required: true
     }
   },
-  label: {
-    type: String,
-    required: true
-  },
+  label: String,
   defaultAnimation: {
     type: Number,
     default: 2
