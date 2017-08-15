@@ -67,7 +67,7 @@ authRouter.post('/login', passport.authenticate("local", {session: false}), (req
 
 
 //post userSchema
-authRouter.post('/signup', authorization, (req, res) => {
+authRouter.post('/signup', (req, res) => {
   User.findOne({username: req.body.username}, (err, result) => {
     if(err) {
       res.status(500).send({"message":"ERROR within server", err});
@@ -96,5 +96,39 @@ authRouter.post('/signup', authorization, (req, res) => {
 //     }
 //   });
 // });
+
+authRouter.get("/userque", authorization, admin, (req, res) => {
+   console.log("here")
+  UserQue.find({}, (err, data) => {
+    if(err) {
+      res.status(500).send({"message": "ERROR within server", err});
+    } else {
+      res.status(200).send({"message": "SUCCESS user que", data});
+    }
+  });
+});
+
+authRouter.post("/user", authorization, admin, (req, res) => {
+  let newUser = new User(req.body);
+  newUser.save((err, data) => {
+    if(err) {
+      res.status(500).send({"message":"ERROR within server", err});
+    } else {
+      res.status(201).send({`"message":"User was created with username: ${data.username}`});
+    }
+  });
+});
+
+authRouter.delete("/user", authorization, admin, (req, res) => {
+  User.findByIdAndRemove({_id: req.body._id}, (err, data) => {
+    if(err) {
+      res.status(500).send({"message":"ERROR within server", err});
+    } else if (data === null) {
+      res.status(404).send({"message": `User with id ${data._id} was not found`});
+    } else {
+      res.status(200).send({"message": `Deleted user with username: ${data.username}`});
+    }
+  });
+});
 
 module.exports = authRouter;

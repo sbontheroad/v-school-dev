@@ -4,7 +4,6 @@ export function login (username, password) {
   return (dispatch) => {
     return axios.post("http://localhost:8080/auth/login", {username, password}).then((response) => {
       dispatch(setToken(response.data.token));
-      dispatch(setPriv(response.data.priv));
     })
     .catch((err) => {
       alert("username or password are not correct...")
@@ -48,45 +47,6 @@ export function loadGuests(token) {
   }
 }
 
-export function loadUserQue(token) {
-  return (dispatch) => {
-    return axios.get("http://localhost:8080/auth/userque", {headers: {Authorization: `Bearer ${token}`}}).then((response) => {
-      dispatch(setUserQue(response.data.data));
-    })
-    .catch((err) => {
-      throw err;
-    });
-  }
-}
-
-export function addUser(username, priv, token) {
-  return (dispatch) => {
-    return axios.post("http://localhost:8080/auth/userque", {username, priv}, {headers: {Authorization: `Bearer ${token}`}}).then((response) => {
-      dispatch(loadUserQue(token));
-    })
-    .catch((err) => {
-      throw err;
-    });
-  }
-}
-
-export function removeUser(username, priv, token) {
-  return (dispatch) => {
-    return axios.post("http://localhost:8080/auth/userque", {username, priv}, {headers: {Authorization: `Bearer ${token}`}}).then((response) => {
-      dispatch(loadUserQue(token));
-    })
-    .catch((err) => {
-      throw err;
-    });
-  }
-}
-
-export function setUserQue(data) {
-  return {
-    type: "SET_USER_QUE",
-    data
-  }
-}
 
 
 export function setEvents(data) {
@@ -107,12 +67,5 @@ export function setToken(token) {
   return {
     type: "SET_TOKEN",
     token
-  }
-}
-
-export function setPriv(priv) {
-  return {
-    type: "SET_PRIV",
-    priv
   }
 }

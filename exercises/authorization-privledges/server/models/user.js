@@ -20,16 +20,17 @@ let userSchema = new Schema ({
   }
 });
 
-userSchema.pre("save", function(next) {
-  this.password = bcrypt.hashSync(this.password + this.username, salt);
-  next();
-});
+// userSchema.pre("save", function(next) {
+//   this.password = bcrypt.hashSync(this.password + this.username, salt);
+//   next();
+// });
 
+//here we create the method 'auth' which is used in the route auth.js.  the callback is defined in auth.js.
 userSchema.methods.auth = function(passwordAttempt, cb) {
   bcrypt.compare(passwordAttempt + this.username, this.password, (err, result) => {
     if(err) {
       console.log(err);
-      cd(false);
+      cb(false);
     } else if (result) {
       cb (true);
     } else {

@@ -1,7 +1,6 @@
 let defaultState = {
   events: [],
   guests: [],
-  userQue: [],
   username: "",
   password: "",
   token: ""
@@ -24,18 +23,7 @@ const mainReducer = (state = defaultState, action) => {
       ...state,
       token: action.token
     }
-  }  else if (action.type === "SET_PRIV") {
-    return {
-      ...state,
-      priv: action.priv
-    }
-  } else if (action.type === "SET_USER_QUE") {
-    // console.log(action.data);
-    return {
-      ...state,
-      userQue: action.data
-    }
-  } else {
+  }  else {
       return {
         ...state
     }

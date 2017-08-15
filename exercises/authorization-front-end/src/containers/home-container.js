@@ -7,7 +7,6 @@ import * as actionCreators from "../actions";
 import Events from "../components/events.js";
 import Guests from "../components/guests.js";
 import Modal from "react-modal";
-import UserQueContainer from "./user-que-container.js";
 
 import LoginContainer from "../containers/login-container.js";
 import SignupContainer from "../containers/signup-container.js";
@@ -76,7 +75,6 @@ class HomeContainer extends React.Component {
 
         <Events events={this.props.events} />
         <Guests token={this.props.token} guests={this.props.guests} />
-        <UserQueContainer />
       </div>
     )
   }
