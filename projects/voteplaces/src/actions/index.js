@@ -2,7 +2,9 @@ let axios = require('axios');
 
 export function loadData() {
   return (dispatch) => {
-    return axios.get("http://localhost:8080/votes").then((response) => {
+    //shortening url to go live, they were like this: return axios.get("http://localhost:8080/votes").then((response) => {
+    //this is removing local host up to the forward slash. If it is pulling from a api with a different url - keep that url
+    return axios.get("/votes").then((response) => {
       dispatch(setData(response.data.data));
     })
     .catch((err) => {
@@ -13,7 +15,7 @@ export function loadData() {
 
 export function loadDataById(id) {
   return (dispatch) => {
-    return axios.get(`http://localhost:8080/votes/${id}`).then((response) => {
+    return axios.get(`/votes/${id}`).then((response) => {
       dispatch(setSingleData(response.data.data));
     })
     .catch((err) => {
@@ -24,7 +26,7 @@ export function loadDataById(id) {
 
 export function addData(data) {
   return (dispatch) => {
-    return axios.post("http://localhost:8080/votes", data).then((response) => {
+    return axios.post("/votes", data).then((response) => {
       dispatch(loadData());
     })
     .catch((err) => {
@@ -36,7 +38,7 @@ export function addData(data) {
 export function voteUp(id, e) {
   console.log(e);
   return (dispatch) => {
-    return axios.put(`http://localhost:8080/votes/voteUp/${id}`).then((response) => {
+    return axios.put(`/votes/voteUp/${id}`).then((response) => {
       dispatch(loadData());
       dispatch(loadDataById(id));
     })
@@ -48,7 +50,7 @@ export function voteUp(id, e) {
 
 export function voteDown(id) {
   return (dispatch) => {
-    return axios.put(`http://localhost:8080/votes/voteDown/${id}`).then((response) => {
+    return axios.put(`/votes/voteDown/${id}`).then((response) => {
       dispatch(loadData());
       dispatch(loadDataById(id));
     })
@@ -60,7 +62,7 @@ export function voteDown(id) {
 
 export function deleteData(id) {
   return (dispatch) => {
-    return axios.delete(`http://localhost:8080/votes/${id}`).then((response) => {
+    return axios.delete(`/votes/${id}`).then((response) => {
       dispatch(loadData());
     })
     .catch((err) => {
@@ -71,7 +73,7 @@ export function deleteData(id) {
 
 export function comment(id, comment) {
   return (dispatch) => {
-    return axios.put(`http://localhost:8080/votes/comment/${id}`, {comment}).then((response) => {
+    return axios.put(`/votes/comment/${id}`, {comment}).then((response) => {
       dispatch(loadData());
       dispatch(loadDataById(id));
     })
@@ -105,7 +107,7 @@ function setSingleData(data) {
 ////MAPS ACTIONS
 export function loadMarkers() {
   return (dispatch) => {
-    return axios.get("http://localhost:9000/map").then((response) => {
+    return axios.get("/map").then((response) => {
       dispatch(setMarkers(response.data.data));
     })
     .catch((err) => {
@@ -123,7 +125,7 @@ export function addMarker(input) {
       },
       label: input.label
     }
-    return axios.post("http://localhost:9000/map", data).then((response) => {
+    return axios.post("/map", data).then((response) => {
       dispatch(loadMarkers());
     })
     .catch((err) => {
@@ -134,7 +136,7 @@ export function addMarker(input) {
 
 export function deleteMarker(data) {
   return (dispatch) => {
-    return axios.delete(`http://localhost:9000/map/${data._id}`).then((response) => {
+    return axios.delete(`/map/${data._id}`).then((response) => {
       dispatch(loadMarkers());
       dispatch(setCurrent(data));
     })
